@@ -1,0 +1,14 @@
+.momentText {
+    color: transparent;
+    -webkit-text-stroke: 1px #967844;
+    background: url(../../../../asset/main-Logo/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 50s linear infinite;
+}
+
+@keyframes back {
+    100% {
+        background-position: 5000px 0;
+    }
+}

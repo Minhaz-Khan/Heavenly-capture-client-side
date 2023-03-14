@@ -1,0 +1,4 @@
+.parallax {
+    background: url('../../../../asset/parallax.jpg') fixed 100%;
+    background-size: cover;
+}
