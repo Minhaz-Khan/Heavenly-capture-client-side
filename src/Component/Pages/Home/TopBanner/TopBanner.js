@@ -1,8 +1,8 @@
 import React from 'react';
 import { Fade } from 'react-slideshow-image';
-import image1 from '../../../../asset/slider-image/groom-holds-bride-s-hands-where-are-two-wedding-rings.jpg'
-import image2 from '../../../../asset/slider-image/groom-putting-ring-bride-s-finger.jpg'
-import image3 from '../../../../asset/slider-image/bride-walking-with-diadem-flowers.jpg'
+import image1 from '../../../../asset/slider-image/groom-holds-bride-s-hands-where-are-two-wedding-rings.jpg';
+import image2 from '../../../../asset/slider-image/groom-putting-ring-bride-s-finger.jpg';
+import image3 from '../../../../asset/slider-image/young-bride-groom-having-beach-wedding.jpg';
 import 'react-slideshow-image/dist/styles.css'
 import './TopBanner.css'
 import { AiOutlineRight, AiOutlineLeft } from "react-icons/ai";

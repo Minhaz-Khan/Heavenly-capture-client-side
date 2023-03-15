@@ -1,0 +1,164 @@
+[
+    {
+        "serviceName": "Wedding Photography",
+        "sellerEmail": "photographybyjane@gmail.com",
+        "companyName": "Everlasting Memories",
+        "packagePrice": 9734,
+        "rating": "4.8",
+        "details": "At Everlasting Memories, we offer exceptional wedding photography services to capture your special day. Our experienced photographers are skilled at capturing candid moments and crafting stunning portraits. We work closely with our clients to ensure their vision is brought to life. Let us help you create beautiful memories that will last a lifetime.",
+        "image": "https://i.ibb.co/y8nMjnr/pexels-luana-freitas-15794832.jpg"
+    },
+    {
+        "serviceName": "Wedding Photography",
+        "sellerEmail": "eventsnapshot@gmail.com",
+        "companyName": "Elegant Events",
+        "packagePrice": 8231,
+        "rating": "4.7",
+        "details": "Elegant Events is dedicated to capturing the beauty and magic of your wedding day through our photography services. Our team of talented photographers will work closely with you to ensure your vision is brought to life. We specialize in creating timeless and romantic images that you'll treasure for years to come.",
+        "image": "https://i.ibb.co/HPTRk8B/front-view-empty-grey-wall-circle-mirror-which-is-reflected-attractive-bride-wedding-gown-which-rais.jpg"
+    },
+    {
+        "serviceName": "Wedding Photography",
+        "sellerEmail": "theweddinglens@gmail.com",
+        "companyName": "Enchanted Moments",
+        "packagePrice": 10573,
+        "rating": "4.9",
+        "details": "Enchanted Moments is committed to capturing the essence of your wedding day through our photography services. Our team of skilled photographers are experts at capturing every detail and emotion, from the first kiss to the last dance. Let us help you create beautiful memories that will last a lifetime.",
+        "image": "https://i.ibb.co/5YxfvW8/pexels-felipe-pick-costa-15006266.jpg"
+    },
+    {
+        "serviceName": "Wedding Photography",
+        "sellerEmail": "blissfulmemoriesphoto@gmail.com",
+        "companyName": "Forever Yours Photography",
+        "packagePrice": 9542,
+        "rating": "4.6",
+        "details": "Forever Yours Photography specializes in capturing the love and romance of your wedding day. Our team of experienced photographers will work closely with you to ensure your vision is brought to life. We pride ourselves on creating stunning and timeless images that you'll treasure for years to come.",
+        "image": "https://i.ibb.co/RYsPYJz/pexels-pavel-danilyuk-8815283.jpg"
+    },
+    {
+        "serviceName": "Wedding Photography",
+        "sellerEmail": "purefocusphotography@gmail.com",
+        "companyName": "Picture Perfect Weddings",
+        "packagePrice": 11827,
+        "rating": "5.0",
+        "details": "Picture Perfect Weddings is dedicated to capturing the magic and beauty of your special day. Our team of skilled photographers will work closely with you to create stunning and timeless images that you'll treasure for years to come. Let us help you make your wedding day truly unforgettable.",
+        "image": "https://i.ibb.co/wWq3J0R/beautiful-woman-long-red-dress-walks-around-city-with-her-husband-1-1.jpg"
+    },
+    {
+        "serviceName": "Wedding Photography",
+        "sellerEmail": "momentsbymary@gmail.com",
+        "companyName": "Romantic Memories",
+        "packagePrice": 6698,
+        "rating": "4.4",
+        "details": "At Captured Memories, we offer wedding photography services that capture the most special moments of your big day. Our team of expert photographers will work with you to create beautiful memories that you'll cherish for years to come. With our attention to detail and creative eye, we'll make sure that every shot is perfect. Book with us today and let us help you capture your special day in the best way possible.",
+        "image": "https://i.ibb.co/wzjSLqp/fashion-wedding-couple-wedding-dress-1.jpg"
+    },
+    {
+        "serviceName": "Wedding films",
+        "sellerEmail": "example1@gmail.com",
+        "companyName": "Forever Films",
+        "packagePrice": 7999,
+        "rating": "4.7",
+        "details": "At Forever Films, we specialize in creating stunning wedding films that capture the essence of your big day. Our experienced team uses state-of-the-art equipment and techniques to create a unique and beautiful cinematic experience. Let us help you relive the memories of your wedding day for years to come. Contact us today to book your wedding film package.",
+        "image": "https://i.ibb.co/X7M8R1f/beautiful-couple-posing-their-wedding-day-1.jpg"
+    },
+    {
+        "serviceName": "Wedding films",
+        "sellerEmail": "example2@gmail.com",
+        "companyName": "Cinematic Weddings",
+        "packagePrice": 5999,
+        "rating": "4.9",
+        "details": "At Cinematic Weddings, we create breathtaking wedding films that are tailored to your unique love story. Our team of experienced videographers uses a combination of storytelling and stunning visuals to create a cinematic experience that will transport you back to your wedding day. Contact us today to learn more about our wedding film packages.",
+        "image": "https://i.ibb.co/TvZtsgb/beautiful-wedding-couple-forest-with-yellowed-trees-almost-kissing-marriage-concept-wedding-couple-a.jpg"
+    },
+    {
+        "serviceName": "Wedding films",
+        "sellerEmail": "example3@gmail.com",
+        "companyName": "Memories in Motion",
+        "packagePrice": 8499,
+        "rating": "4.6",
+        "details": "At Memories in Motion, we understand the importance of preserving the memories of your special day. Our team of skilled videographers will capture every moment of your wedding day, from the first look to the last dance. Let us help you tell your love story through a beautiful wedding film. Contact us today to learn more.",
+        "image": "https://i.ibb.co/L5sz8ZF/beautiful-wedding-couple-is-walking-green-field-1.jpg"
+    },
+    {
+        "serviceName": "Wedding films",
+        "sellerEmail": "example4@gmail.com",
+        "companyName": "Heartfelt Films",
+        "packagePrice": 7299,
+        "rating": "4.8",
+        "details": "At Heartfelt Films, we believe that every love story deserves to be told through a beautiful wedding film. Our team of talented videographers will capture the magic of your big day and turn it into a cinematic masterpiece that you'll treasure forever. Let us help you create a timeless tribute to your love story. Contact us today to learn more.",
+        "image": "https://i.ibb.co/RTTj2fr/wedding-couple-church-1.jpg"
+    },
+    {
+        "serviceName": "Wedding films",
+        "sellerEmail": "example5@gmail.com",
+        "companyName": "Enchanted Weddings",
+        "packagePrice": 8999,
+        "rating": "4.5",
+        "details": "At Enchanted Weddings, we understand the importance of creating a beautiful and unique wedding film that captures the essence of your love story. Our team of skilled videographers uses a combination of modern techniques and storytelling to create a cinematic experience that you'll treasure forever. Contact us today to learn more about our wedding film packages.",
+        "image": "https://i.ibb.co/pvt3xsw/beautiful-woman-long-red-dress-walks-around-city-with-her-husband-1.jpg"
+    },
+    {
+        "serviceName": "Wedding films",
+        "sellerEmail": "example6@gmail.com",
+        "companyName": "Eternal Memories",
+        "packagePrice": 6799,
+        "rating": "4.3",
+        "details": "At Eternal Memories, we specialize in creating timeless and elegant wedding films that tell the story of your special day. Our team of skilled videographers uses a combination of creative techniques and stunning visuals to capture every moment of your wedding. Let us help you create a beautiful and unforgettable tribute to your love story.",
+        "image": "https://i.ibb.co/c31Jxqp/newlywed-couple-woods-1.jpg"
+    },
+    {
+        "serviceName": "Portrait",
+        "sellerEmail": "example1@gmail.com",
+        "companyName": "Picture Perfect",
+        "packagePrice": 7499,
+        "rating": "4.2",
+        "details": "At Picture Perfect, we specialize in capturing stunning and timeless portrait photography that celebrates the beauty and uniqueness of each individual. Our team of experienced photographers use their artistic vision and creative techniques to capture your true essence and personality. Let us help you create beautiful and lasting memories that you'll cherish for a lifetime.",
+        "image": "https://i.ibb.co/rk17Vjd/pexels-spencer-selover-775358.jpg"
+    },
+    {
+        "serviceName": "Portrait",
+        "sellerEmail": "example2@gmail.com",
+        "companyName": "Artistic Expressions",
+        "packagePrice": 5999,
+        "rating": "4.5",
+        "details": "At Artistic Expressions, we believe that every person has a story to tell and our team of professional photographers are here to help you capture and express it. Whether it's a family portrait or an individual portrait, we work closely with you to bring your vision to life. Our unique and creative approach ensures that your portraits are not just photographs, but works of art that you can cherish forever.",
+        "image": "https://i.ibb.co/tZKjHFN/pexels-ivan-oboleninov-2916814.jpg"
+    },
+    {
+        "serviceName": "Portrait",
+        "sellerEmail": "example3@gmail.com",
+        "companyName": "Memories in Frames",
+        "packagePrice": 7999,
+        "rating": "4.1",
+        "details": "At Memories in Frames, we create stunning and memorable portraits that capture the essence of you and your loved ones. Our team of professional photographers use their artistic skills and technical expertise to create portraits that are both beautiful and meaningful. From the lighting to the poses, we pay attention to every detail to create a portrait that you'll be proud to display for years to come.",
+        "image": "https://i.ibb.co/zNtBvsV/pexels-dzenina-lukac-1376042.jpg"
+    },
+    {
+        "serviceName": "Portrait",
+        "sellerEmail": "example4@gmail.com",
+        "companyName": "Golden Moments",
+        "packagePrice": 6999,
+        "rating": "4.3",
+        "details": "At Golden Moments, we believe that portraits are more than just photographs, they are reflections of who you are and the memories that you hold dear. Our team of professional photographers work closely with you to create portraits that capture your unique personality and style. From classic to contemporary, we offer a range of portrait styles to suit your individual needs and preferences.",
+        "image": "https://i.ibb.co/HVxbjGw/pexels-suraj-gangoni-2899935.jpg"
+    },
+    {
+        "serviceName": "Portrait",
+        "sellerEmail": "example5@gmail.com",
+        "companyName": "Elegant Portraits",
+        "packagePrice": 8499,
+        "rating": "4.0",
+        "details": "At Elegant Portraits, we believe that every person is beautiful and deserves to be celebrated. Our team of experienced photographers use their skills and creativity to capture stunning portraits that showcase your unique beauty and personality. From the location to the poses, we work closely with you to create portraits that are both elegant and timeless. Let us help you celebrate your individuality and create portraits that you'll cherish for a lifetime.",
+        "image": "https://i.ibb.co/cDTDyFv/pexels-nayara-dinato-1853561.jpg"
+    },
+    {
+        "serviceName": "Portrait",
+        "sellerEmail": "example6@gmail.com",
+        "companyName": "Eternal Memories",
+        "packagePrice": 6799,
+        "rating": "4.3",
+        "details": "At Eternal Memories, we specialize in creating timeless and elegant portrait photography that captures the essence of your unique personality and style. Our team of skilled photographers uses a combination of creative techniques and stunning visuals to create portraits that are both beautiful and meaningful. Let us help you",
+        "image": "https://i.ibb.co/X7FCW6R/pexels-evg-kowalievska-1381556.jpg"
+    }
+]

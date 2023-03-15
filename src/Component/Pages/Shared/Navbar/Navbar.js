@@ -3,20 +3,20 @@ import { toast } from 'react-hot-toast';
 import { Link, NavLink } from 'react-router-dom';
 // import Swal from 'sweetalert2';
 import logo from '../../../../asset/main-Logo/pngegg (2).png'
-// import { AuthContext } from '../../../Context/AuthProvider/AuthProvider';
+import { AuthContext } from '../../../AuthProvider/AuthProvider';
+
 
 
 const Navbar = () => {
-    // const { user, logOut } = useContext(AuthContext)
-    const user = true;
+    const { user, logOut } = useContext(AuthContext)
     const [isOpen, setIsOpen] = useState(false)
     // const [isDashBoard, setIsDashBoard] = useState(true)
     // console.log(isDashBoard);
     const handleLogOut = () => {
-        // logOut()
-        //     .then(() => {
-        //         toast.success('logOut successfully')
-        //     })
+        logOut()
+            .then(() => {
+                toast.success('logOut successfully')
+            })
     }
     return (
         <nav x-data="{ isOpen: false }" className="relative bg-white shadow dark:bg-gray-800">
@@ -47,14 +47,14 @@ const Navbar = () => {
                 {/* <!-- Mobile Menu open: "block", Menu closed: "hidden" --> */}
                 <div className={`${isOpen ? 'translate-x-0 opacity-95 ' : 'opacity-0 -translate-x-full '}absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-gray-800 md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center`}>
                     <div className="flex flex-col md:flex-row justify-items-center md:mx-6">
-                        <NavLink className={({ isActive }) => isActive ? 'text-lightSecondary md:mx-4 md:my-0 my-2 text-lg font-medium' : "my-2 text-lg font-medium text-gray-500 transition-colors duration-300 transform  hover:text-maroon dark:hover:text-[#EEA800] md:mx-4 md:my-0"} to={'/'} >Home</NavLink>
+                        <NavLink className={({ isActive }) => isActive ? 'text-lightSecondary md:mx-4 md:my-0 my-2 text-lg font-medium' : "my-2 text-lg font-medium text-gray-800 transition-colors duration-300 transform  hover:text-maroon dark:hover:text-[#EEA800] md:mx-4 md:my-0"} to={'/'} >Home</NavLink>
 
                         {
                             user ?
                                 <>
-                                    <NavLink className={({ isActive }) => isActive ? 'text-maroon md:mx-4 md:my-0 my-2 text-lg font-medium' : "my-2 text-lg font-medium text-gray-500 transition-colors duration-300 transform dark:text-gray-200 hover:text-maroon dark:hover:text-blue-400 md:mx-4 md:my-0"} to={'/dashboard'}>Dashboard</NavLink>
-                                    <NavLink onClick={handleLogOut} className="my-2 text-lg font-medium  transition-colors duration-300 transform text-gray-500 hover:text-maroon dark:hover:text-blue-400 md:mx-4 md:my-0" >Log Out</NavLink></> :
-                                <NavLink className={({ isActive }) => isActive ? 'text-maroon md:mx-4 md:my-0 my-2 text-lg font-medium' : "my-2 text-lg font-medium  transition-colors duration-300 transform text-gray-200 hover:text-maroon dark:hover:text-blue-400 md:mx-4 md:my-0"} to={'/login'}>Login</NavLink>
+                                    <NavLink className={({ isActive }) => isActive ? 'text-lightSecondary md:mx-4 md:my-0 my-2 text-lg font-medium' : "my-2 text-lg font-medium text-gray-800 transition-colors duration-300 transform dark:text-gray-200 hover:text-maroon dark:hover:text-blue-400 md:mx-4 md:my-0"} to={'/dashboard'}>Dashboard</NavLink>
+                                    <NavLink onClick={handleLogOut} className="my-2 text-lg font-medium  transition-colors duration-300 transform text-gray-800 hover:text-maroon dark:hover:text-blue-400 md:mx-4 md:my-0" >Log Out</NavLink></> :
+                                <NavLink className={({ isActive }) => isActive ? 'text-lightSecondary md:mx-4 md:my-0 my-2 text-lg font-medium' : "my-2 text-lg font-medium  transition-colors duration-300 transform text-gray-800 hover:text-maroon dark:hover:text-blue-400 md:mx-4 md:my-0"} to={'/login'}>Login</NavLink>
                         }
                     </div>
 
