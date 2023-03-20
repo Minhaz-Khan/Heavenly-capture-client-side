@@ -16,7 +16,7 @@ module.exports = {
       Kaushan: ['Kaushan Script', 'cursive']
     }
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }
 
 // 

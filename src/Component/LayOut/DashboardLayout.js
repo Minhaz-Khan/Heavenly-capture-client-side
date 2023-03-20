@@ -1,14 +1,14 @@
 import React, { useContext } from 'react';
 import { Link, Outlet } from 'react-router-dom';
-import Navbar from '../../Pages/Shared/Navbar/Navbar';
-import logo from '../../../Images/pngegg.png'
-import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
-import useUserType from '../../useUserType/useUserType'
+import logo from '../../asset/main-Logo/pngegg (2).png'
+import { AuthContext } from '../AuthProvider/AuthProvider';
+import Navbar from '../Pages/Shared/Navbar/Navbar';
 
 const DashboardLayout = () => {
     const { user } = useContext(AuthContext);
     // console.log(user);
-    const { userType, isLoading } = useUserType(user?.email)
+    // const { userType, isLoading } = useUserType(user?.email)
+    const userType = 'user'
     // console.log(userType);
     return (
         <div>
@@ -69,9 +69,9 @@ const DashboardLayout = () => {
                                     <p className="mx-2 mt-1 text-sm font-medium text-gray-600 dark:text-gray-400">{user?.email}</p>
                                 </div>
 
-                                <Link className='flex space-x-2 justify-center'>
+                                <Link className='flex space-x-2 justify-center items-center'>
                                     <img className="w-auto md:h-10 h-7" src={logo} alt="" />
-                                    <h4 className='text-2xl font-Caveat font-bold'>Antique Avenue</h4>
+                                    <h4 className='text-xl font-Caveat font-bold'>Heavenly-Capture</h4>
                                 </Link>
 
 
