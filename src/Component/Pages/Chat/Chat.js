@@ -41,8 +41,8 @@ const Chat = () => {
             console.log(data.user, data.message);
         })
         return () => {
-            // socket.emit('disconnect')
-            // socket.off();
+            socket.on('disconnect')
+            socket.off();
         }
     }, [user?.displayName])
 
@@ -58,10 +58,10 @@ const Chat = () => {
 
 
     return (
-        <div className='container mx-auto min-h-screen flex justify-center items-center'>
-            <div className='w-6/12 border-2 border-lightSecondary'>
+        <div className='container mx-auto md:my-40 flex justify-center items-center'>
+            <div className='w-full  lg:w-6/12 border-2 border-lightSecondary'>
                 <dir className='w-full p-0 h-12 m-0  bg-themePrimary'></dir>
-                <ScrollToBottom className='h-72 p-0 m-0 space-y-5 overflow-y-scroll'>
+                <ScrollToBottom className='h-96 p-0 m-0 space-y-5 overflow-y-scroll'>
                     {message.map((item, i) => <Message key={i} message={item.message} classs={item.id === id ? 'right' : 'left'} user={item.id === id ? '' : item.user} />)}
                 </ScrollToBottom >
                 <form onSubmit={handleMessage} className='h-12 p-0 flex m-0'>
