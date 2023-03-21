@@ -4,15 +4,7 @@ import Moments from '../Moments/Moments';
 import OurTeam from '../OurTeamSection/OurTeam';
 import Parallax from '../ParallaxSection/Parallax';
 import TopBanner from '../TopBanner/TopBanner';
-import { io } from 'socket.io-client';
-
-const ENDPOINT = 'http://localhost:5000/'
-const socket = io(ENDPOINT, { transports: ['websocket'] })
-
 const Home = () => {
-    socket.on('connect', () => {
-
-    })
     return (
         <div>
             <TopBanner></TopBanner>
