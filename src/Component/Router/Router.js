@@ -3,6 +3,7 @@ import DashboardLayout from "../LayOut/DashboardLayout";
 import Main from "../LayOut/Main";
 import Chat from "../Pages/Chat/Chat";
 import Dashboard from "../Pages/Dashboard/Dashboard/Dashboard";
+import MyBookings from "../Pages/Dashboard/MyBookings/MyBookings";
 import Home from "../Pages/Home/Home/Home";
 import ServiceDetails from "../Pages/ServiceDetails/ServiceDetails";
 import Services from "../Pages/Services/Services";
@@ -52,7 +53,11 @@ export const router = createBrowserRouter([
             {
                 path: '/dashboard',
                 element: <Dashboard></Dashboard>
-            }
+            },
+            {
+                path: '/dashboard/mybooking',
+                element: <MyBookings></MyBookings>
+            },
         ]
     }
 ])

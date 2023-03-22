@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
+import BookingModal from './BookingModal/BookingModal';
 import ReviewSection from './ReviewSection/ReviewSection';
 import ServiceSlider from './ServiceSlider/ServiceSlider';
 
 const ServiceDetails = () => {
     const serviceinfo = useLoaderData();
+    const [isModalOpen, setIsModalOpen] = useState(false)
     const { _id, serviceName, sellerEmail, companyName, packagePrice, rating, details, image } = serviceinfo;
+
     return (
 
 
@@ -70,18 +73,21 @@ const ServiceDetails = () => {
                             </div>
 
                             <button
+
                                 type="submit"
                                 className="w-full rounded bg-themeSecondary hover:bg-lightSecondary px-6 py-3 text-sm font-bold uppercase tracking-wide text-white"
                             >
                                 Add to cart
                             </button>
 
-                            <button
+                            <label
+                                onClick={() => setIsModalOpen(true)}
+                                htmlFor="Booking-Modal"
                                 type="button"
-                                className="w-full rounded border border-gray-300 bg-gray-100 hover:bg-gray-200 px-6 py-3 text-sm font-bold uppercase tracking-wide"
+                                className="w-full text-center cursor-pointer rounded border border-gray-300 bg-gray-100 hover:bg-gray-200 px-6 py-3 text-sm font-bold uppercase tracking-wide"
                             >
                                 Book now
-                            </button>
+                            </label>
 
                             <Link to={'/chat'}
                                 type="button"
@@ -107,6 +113,7 @@ const ServiceDetails = () => {
                 <ServiceSlider></ServiceSlider>
             </div>
             <ReviewSection serviceinfo={serviceinfo} />
+            {isModalOpen && <BookingModal serviceinfo={serviceinfo} setIsModalOpen={setIsModalOpen}></BookingModal>}
         </section>
 
     );

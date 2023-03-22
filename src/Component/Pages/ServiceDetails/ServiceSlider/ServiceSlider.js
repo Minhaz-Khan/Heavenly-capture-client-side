@@ -26,7 +26,6 @@ const ServiceSlider = () => {
             <div id="slider">
                 {
                     image.map((slide, index) => {
-                        console.log(slide);
                         return (
                             <div className="slider-card" key={index} onClick={() => slide.clickEvent()}>
                                 <div className="slider-card-image" style={{ backgroundImage: `url(${slide.image})`, backgroundSize: 'cover' }}></div>
