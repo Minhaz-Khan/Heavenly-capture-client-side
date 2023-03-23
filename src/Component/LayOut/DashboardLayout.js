@@ -26,8 +26,8 @@ const DashboardLayout = () => {
                             <nav className="-mx-3 space-y-6 ">
                                 <div className="space-y-3 ">
                                     <Link className='flex space-x-2 justify-center items-center'>
-                                        <h4 className='text-xl font-Caveat font-bold'>Heavenly-Capture</h4>
                                         <img className="w-auto md:h-10 h-7" src={logo} alt="" />
+                                        <h4 className='text-xl font-DM_Serif font-bold'>Heavenly-Capture</h4>
                                     </Link>
 
 

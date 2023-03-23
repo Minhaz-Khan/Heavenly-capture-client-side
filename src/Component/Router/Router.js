@@ -10,11 +10,13 @@ import Services from "../Pages/Services/Services";
 import ErrorPage from "../Pages/Shared/ErrorPage/ErrorPage";
 import Login from "../Pages/User/Login";
 import SignUp from "../Pages/User/SignUp";
+import PrivetRoute from "../PrivetRoute/PrivetRoute";
 
 export const router = createBrowserRouter([
     {
         path: '/',
         element: <Main></Main>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: '/',
@@ -30,17 +32,17 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/services/:category',
-                element: <Services></Services>,
+                element: <PrivetRoute><Services></Services></PrivetRoute>,
                 loader: ({ params }) => fetch(`http://localhost:5000/services?category=${params.category}`)
             },
             {
                 path: '/service/:id',
-                element: <ServiceDetails></ServiceDetails>,
+                element: <PrivetRoute><ServiceDetails></ServiceDetails></PrivetRoute>,
                 loader: ({ params }) => fetch(`http://localhost:5000/service/${params.id}`)
             },
             {
                 path: '/chat',
-                element: <Chat></Chat>,
+                element: <PrivetRoute><Chat></Chat></PrivetRoute>,
             },
 
         ]

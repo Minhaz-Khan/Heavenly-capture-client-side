@@ -1,13 +1,17 @@
 import React, { useContext } from 'react';
 import { Triangle } from 'react-loader-spinner';
 import { Navigate, useLocation } from 'react-router-dom';
-import { AuthContext } from '../AuthProvider/AuthProvider';
+import { AuthContext } from '../Context/AuthProvider/AuthProvider';
+import useUserType from '../useUserType/useUserType';
 
-
-const PrivetRoute = ({ children }) => {
+const AdminRoute = ({ children, test }) => {
+    // console.log(test);
     const location = useLocation()
     const { user, loading } = useContext(AuthContext);
-    if (loading) {
+    console.log(user.email);
+    const { userType, isLoading } = useUserType(user?.email)
+    // console.log(userType, isLoading, user.email);
+    if (loading && isLoading) {
         return <dir className='h-screen flex justify-center items-center'>
             <Triangle
                 height="80"
@@ -21,12 +25,13 @@ const PrivetRoute = ({ children }) => {
         </dir>
     }
 
-    if (user) {
+    if (user && userType) {
         return children;
     }
     else {
         return <Navigate to={'/login'} state={{ from: location }} replace></Navigate>
     }
+
 };
 
-export default PrivetRoute;
+export default AdminRoute;

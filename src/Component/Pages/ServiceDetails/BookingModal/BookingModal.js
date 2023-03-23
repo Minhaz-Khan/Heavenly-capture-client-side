@@ -21,7 +21,8 @@ const BookingModal = ({ serviceinfo, setIsModalOpen }) => {
             serviceName,
             image,
             packagePrice,
-            sellerEmail
+            sellerEmail,
+            companyName
         }
         console.log(bookingDetails);
         setIsLoading(true)
