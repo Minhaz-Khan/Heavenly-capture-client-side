@@ -10,9 +10,7 @@ const Login = () => {
     const location = useLocation();
     const navigate = useNavigate();
     const from = location.state?.from?.pathname || '/';
-    const { signIn, loading, googleSignIn } = useContext(AuthContext)
-    const authinfo = useContext(AuthContext);
-    console.log();
+    const { signIn, googleSignIn } = useContext(AuthContext)
     const { register, handleSubmit, formState: { errors } } = useForm();
     const [userEmail, setUserEmail] = useState('');
 
@@ -26,7 +24,6 @@ const Login = () => {
     const handleLogin = data => {
         const email = data.email;
         const password = data.password;
-        // console.log(email.password);
 
         signIn(email, password)
             .then(result => {
@@ -59,7 +56,7 @@ const Login = () => {
                         console.log(data)
                     })
                 setUserEmail(email);
-                alert('your google sing up successfully')
+                toast.success('your google sing up successfully')
             })
             .catch(e => console.log(e))
     }

@@ -3,6 +3,7 @@ import { Link, useLoaderData } from 'react-router-dom';
 import BookingModal from './BookingModal/BookingModal';
 import ReviewSection from './ReviewSection/ReviewSection';
 import ServiceSlider from './ServiceSlider/ServiceSlider';
+import { BsFillChatDotsFill } from "react-icons/bs";
 
 const ServiceDetails = () => {
     const serviceinfo = useLoaderData();
@@ -72,14 +73,6 @@ const ServiceDetails = () => {
                                 <p className="text-xl font-bold">${packagePrice}</p>
                             </div>
 
-                            <button
-
-                                type="submit"
-                                className="w-full rounded bg-themeSecondary hover:bg-lightSecondary px-6 py-3 text-sm font-bold uppercase tracking-wide text-white"
-                            >
-                                Add to cart
-                            </button>
-
                             <label
                                 onClick={() => setIsModalOpen(true)}
                                 htmlFor="Booking-Modal"
@@ -91,9 +84,9 @@ const ServiceDetails = () => {
 
                             <Link to={'/chat'}
                                 type="button"
-                                className="w-full text-center rounded border border-green-300 bg-green-100 hover:bg-green-200 px-6 py-3 text-sm font-bold uppercase tracking-wide"
+                                className="w-full flex justify-center items-center rounded border border-green-300 bg-green-100 hover:bg-green-200 px-6 py-3 text-sm font-bold uppercase tracking-wide"
                             >
-                                Talk to Seller
+                                Talk to Seller <BsFillChatDotsFill className='ml-2 text-xl' />
                             </Link>
 
                         </form>
@@ -110,7 +103,7 @@ const ServiceDetails = () => {
             </div>
             <div className='container mx-auto'>
                 <p className='text-3xl font-medium mb-10 text-center'>Our others services</p>
-                <ServiceSlider></ServiceSlider>
+                <ServiceSlider sellerEmail={sellerEmail}></ServiceSlider>
             </div>
             <ReviewSection serviceinfo={serviceinfo} />
             {isModalOpen && <BookingModal serviceinfo={serviceinfo} setIsModalOpen={setIsModalOpen}></BookingModal>}

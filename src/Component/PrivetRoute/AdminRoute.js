@@ -1,17 +1,16 @@
 import React, { useContext } from 'react';
 import { Triangle } from 'react-loader-spinner';
 import { Navigate, useLocation } from 'react-router-dom';
-import { AuthContext } from '../Context/AuthProvider/AuthProvider';
-import useUserType from '../useUserType/useUserType';
+import useUserType from '../../useUserType/useUserType';
+import { AuthContext } from '../AuthProvider/AuthProvider';
 
-const AdminRoute = ({ children, test }) => {
-    // console.log(test);
+
+
+const AdminRoute = ({ children }) => {
     const location = useLocation()
     const { user, loading } = useContext(AuthContext);
-    console.log(user.email);
     const { userType, isLoading } = useUserType(user?.email)
-    // console.log(userType, isLoading, user.email);
-    if (loading && isLoading) {
+    if (loading || isLoading) {
         return <dir className='h-screen flex justify-center items-center'>
             <Triangle
                 height="80"
@@ -25,7 +24,7 @@ const AdminRoute = ({ children, test }) => {
         </dir>
     }
 
-    if (user && userType) {
+    if (user || userType) {
         return children;
     }
     else {

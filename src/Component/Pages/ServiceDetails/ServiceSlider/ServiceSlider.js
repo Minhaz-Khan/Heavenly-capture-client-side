@@ -1,16 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
 import './ServieSlider.css'
+import { Link } from 'react-router-dom';
 
+const ServiceSlider = ({ sellerEmail }) => {
+    const [services, setServices] = useState()
+    useEffect(() => {
+        fetch(`http://localhost:5000/relativeService?email=${sellerEmail}`, {
+            headers: {
 
-import image1 from '../../../../asset/wedding2.jpg'
-import image2 from '../../../../asset/portrait-2.jpg'
-import image3 from '../../../../asset/pexels-vinicius-wiesehofer-1130626.jpg'
-import image4 from '../../../../asset/pexels-italo-melo-2379004.jpg'
-import image5 from '../../../../asset/pexels-flávio-augusto-1832959.jpg'
-const ServiceSlider = () => {
+                authorization: `bearer ${localStorage.getItem('accessToken')}`
+            },
+        })
+            .then(res => res.json())
+            .then(data => {
+                setServices(data)
+            })
+    })
 
-    const image = [{ image: image1 }, { image: image2 }, { image: image3 }, { image: image4 }, { image: image5 }]
     const slideLeft = () => {
         var slider = document.getElementById("slider");
         slider.scrollLeft = slider.scrollLeft + 500;
@@ -25,13 +32,13 @@ const ServiceSlider = () => {
             <BsChevronLeft className="slider-icon left text-3xl" onClick={slideRight} />
             <div id="slider">
                 {
-                    image.map((slide, index) => {
+                    services?.map((service, index) => {
                         return (
-                            <div className="slider-card" key={index} onClick={() => slide.clickEvent()}>
-                                <div className="slider-card-image" style={{ backgroundImage: `url(${slide.image})`, backgroundSize: 'cover' }}></div>
-                                <p className="slider-card-title">{slide?.title}</p>
-                                <p className="slider-card-description">{slide?.description}</p>
-                            </div>
+                            <Link to={`/service/${service._id}`} className="slider-card" key={index} onClick={() => service.clickEvent()}>
+                                <div className="slider-card-image" style={{ backgroundImage: `url(${service.image})`, backgroundSize: 'cover' }}></div>
+                                <p className="slider-card-title">{service?.title}</p>
+                                <p className="slider-card-description">{service?.description}</p>
+                            </Link>
                         )
                     })
                 }

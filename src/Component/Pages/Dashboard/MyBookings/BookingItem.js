@@ -1,7 +1,6 @@
 import React from 'react';
 
 const BookingItem = ({ order, handleOrderDelete, setPaymentItem }) => {
-    const { _id, image, serviceName, packagePrice, buyerEmail } = order
     const handlePayment = () => {
         setPaymentItem(order)
     }

@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import DashboardLayout from "../LayOut/DashboardLayout";
 import Main from "../LayOut/Main";
 import Chat from "../Pages/Chat/Chat";
+import AddServices from "../Pages/Dashboard/AddServices/AddServices";
 import Dashboard from "../Pages/Dashboard/Dashboard/Dashboard";
 import MyBookings from "../Pages/Dashboard/MyBookings/MyBookings";
 import Home from "../Pages/Home/Home/Home";
@@ -11,6 +12,7 @@ import ErrorPage from "../Pages/Shared/ErrorPage/ErrorPage";
 import Login from "../Pages/User/Login";
 import SignUp from "../Pages/User/SignUp";
 import PrivetRoute from "../PrivetRoute/PrivetRoute";
+import AdminRoute from '../PrivetRoute/AdminRoute'
 
 export const router = createBrowserRouter([
     {
@@ -54,11 +56,15 @@ export const router = createBrowserRouter([
         children: [
             {
                 path: '/dashboard',
-                element: <Dashboard></Dashboard>
+                element: <AdminRoute><Dashboard></Dashboard></AdminRoute>
             },
             {
                 path: '/dashboard/mybooking',
-                element: <MyBookings></MyBookings>
+                element: <AdminRoute><MyBookings></MyBookings></AdminRoute>
+            },
+            {
+                path: '/dashboard/addservice',
+                element: <AdminRoute><AddServices></AddServices></AdminRoute>
             },
         ]
     }
