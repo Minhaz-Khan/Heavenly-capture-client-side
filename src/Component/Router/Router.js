@@ -13,6 +13,7 @@ import Login from "../Pages/User/Login";
 import SignUp from "../Pages/User/SignUp";
 import PrivetRoute from "../PrivetRoute/PrivetRoute";
 import AdminRoute from '../PrivetRoute/AdminRoute'
+import MyProduct from "../Pages/Dashboard/MyProducts/MyProducts";
 
 export const router = createBrowserRouter([
     {
@@ -65,6 +66,10 @@ export const router = createBrowserRouter([
             {
                 path: '/dashboard/addservice',
                 element: <AdminRoute><AddServices></AddServices></AdminRoute>
+            },
+            {
+                path: '/dashboard/myProduct',
+                element: <AdminRoute><MyProduct></MyProduct></AdminRoute>
             },
         ]
     }

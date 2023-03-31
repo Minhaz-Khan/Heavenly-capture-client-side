@@ -48,9 +48,9 @@ const AddServices = () => {
     return (
         <div>
             <div className="flex items-center justify-center my-6">
-                <h2 className="text-2xl text-lightSecondary font-medium  ">Add Service</h2>
+                <h2 className="text-3xl border-b-2 border-lightSecondary text-lightSecondary font-medium uppercase ">Add Service</h2>
             </div>
-            <section className="bg-white dark:bg-gray-900 flex justify-center w-full">
+            <section className="bg-white dark:bg-gray-900 flex justify-center w-full mt-10">
                 <div className="flex justify-center w-5/6 ">
                     <div className="hidden bg-cover lg:block lg:w-2/5" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1494621930069-4fd4b2e24a11?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80)' }}  >
                     </div>
