@@ -12,7 +12,7 @@ const ReviewSection = ({ serviceinfo }) => {
     const { data: reviews, refetch, isLoading } = useQuery({
         queryKey: ['reviews'],
         queryFn: async () => {
-            const res = await fetch(`http://localhost:5000/reviews/${_id}`)
+            const res = await fetch(`https://heavenlycapture.vercel.app/reviews/${_id}`)
             const data = await res.json();
             return data;
         }
@@ -40,7 +40,7 @@ const ReviewSection = ({ serviceinfo }) => {
             date
         }
 
-        fetch('http://localhost:5000/reviews', {
+        fetch('https://heavenlycapture.vercel.app/reviews', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

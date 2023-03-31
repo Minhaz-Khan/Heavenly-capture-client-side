@@ -28,7 +28,7 @@ const AddServices = () => {
             .then(res => res.json())
             .then(data => {
                 const newProduct = { postTime, sellerEmail, serviceName, companyName, packagePrice, image: data.data.display_url, details, rating }
-                fetch(`http://localhost:5000/addProduct?email=${user?.email}`, {
+                fetch(`https://heavenlycapture.vercel.app/addProduct?email=${user?.email}`, {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json',

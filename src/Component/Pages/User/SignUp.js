@@ -49,7 +49,7 @@ const SignUp = () => {
                                 emailVerification()
                                     .then(() => {
                                         const userDetails = { name, email, password, image: imageUrl, userType: type }
-                                        fetch(`http://localhost:5000/users`, {
+                                        fetch(`https://heavenlycapture.vercel.app/users`, {
                                             method: 'POST',
                                             headers: {
                                                 'content-type': 'application/json'
@@ -86,7 +86,7 @@ const SignUp = () => {
                 const image = user.photoURL;
                 const userType = 'buyer';
                 const userDetails = { email, image, name, userType }
-                fetch(`http://localhost:5000/users`, {
+                fetch(`https://heavenlycapture.vercel.app/users`, {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json'

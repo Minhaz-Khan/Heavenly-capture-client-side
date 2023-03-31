@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const ServiceSlider = ({ sellerEmail }) => {
     const [services, setServices] = useState()
     useEffect(() => {
-        fetch(`http://localhost:5000/relativeService?email=${sellerEmail}`, {
+        fetch(`https://heavenlycapture.vercel.app/relativeService?email=${sellerEmail}`, {
             headers: {
 
                 authorization: `bearer ${localStorage.getItem('accessToken')}`

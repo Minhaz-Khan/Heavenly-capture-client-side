@@ -26,7 +26,7 @@ const BookingModal = ({ serviceinfo, setIsModalOpen }) => {
         }
         console.log(bookingDetails);
         setIsLoading(true)
-        fetch(`http://localhost:5000/booking`, {
+        fetch(`https://heavenlycapture.vercel.app/booking`, {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',

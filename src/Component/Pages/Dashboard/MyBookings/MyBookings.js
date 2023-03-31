@@ -13,7 +13,7 @@ const MyBookings = () => {
     const { data: MyOders, isLoading, refetch } = useQuery({
         queryKey: ['mybooking', user?.email],
         queryFn: async () => {
-            const res = await fetch(`http://localhost:5000/mybooking?email=${user?.email}`, {
+            const res = await fetch(`https://heavenlycapture.vercel.app/mybooking?email=${user?.email}`, {
                 headers: {
                     authorization: `bearer ${localStorage.getItem('accessToken')}`
                 }
@@ -48,7 +48,7 @@ const MyBookings = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/booking/${id}`, {
+                fetch(`https://heavenlycapture.vercel.app/booking/${id}`, {
                     method: 'DELETE',
                     headers: {
                         authorization: `bearer ${localStorage.getItem('accessToken')}`

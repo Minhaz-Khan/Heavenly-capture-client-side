@@ -9,7 +9,7 @@ const MyProduct = () => {
     const { data: myProduct, isLoading, refetch } = useQuery({
         queryKey: ['myProduct'],
         queryFn: async () => {
-            const res = await fetch(`http://localhost:5000/myProduct?email=${user?.email}`, {
+            const res = await fetch(`https://heavenlycapture.vercel.app/myProduct?email=${user?.email}`, {
                 headers: {
                     authorization: `bearer ${localStorage.getItem('accessToken')}`
                 }
@@ -29,7 +29,7 @@ const MyProduct = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/myProduct/${id}`, {
+                fetch(`https://heavenlycapture.vercel.app/myProduct/${id}`, {
                     method: 'DELETE',
                     headers: {
                         authorization: `bearer ${localStorage.getItem('accessToken')}`

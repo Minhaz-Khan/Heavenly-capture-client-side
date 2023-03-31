@@ -16,7 +16,7 @@ const Review = ({ review, refetch }) => {
         console.log(newReview);
     }
     const handleReviewEdit = (id) => {
-        fetch(`http://localhost:5000/review/${id}`, {
+        fetch(`https://heavenlycapture.vercel.app/review/${id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -45,7 +45,7 @@ const Review = ({ review, refetch }) => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/review/${id}`, {
+                fetch(`https://heavenlycapture.vercel.app/review/${id}`, {
                     method: 'DELETE',
                 })
                     .then(res => res.json())

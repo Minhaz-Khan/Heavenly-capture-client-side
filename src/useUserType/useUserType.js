@@ -5,7 +5,7 @@ const useUserType = (email) => {
     const [isLoading, setIsLoading] = useState(true)
     useEffect(() => {
 
-        email && fetch(`http://localhost:5000/userType?email=${email}`)
+        email && fetch(`https://heavenlycapture.vercel.app/userType?email=${email}`)
             .then(res => res.json())
             .then(data => {
                 setUserType(data.userType)

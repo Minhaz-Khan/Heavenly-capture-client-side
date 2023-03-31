@@ -4,7 +4,7 @@ const useToken = (email) => {
     const [token, setToken] = useState('');
 
     useEffect(() => {
-        email && fetch(`http://localhost:5000/jwt?email=${email}`)
+        email && fetch(`https://heavenlycapture.vercel.app/jwt?email=${email}`)
             .then(res => res.json())
             .then(data => {
                 if (data.accessToken) {

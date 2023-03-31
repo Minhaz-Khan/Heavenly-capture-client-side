@@ -36,12 +36,12 @@ export const router = createBrowserRouter([
             {
                 path: '/services/:category',
                 element: <PrivetRoute><Services></Services></PrivetRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5000/services?category=${params.category}`)
+                loader: ({ params }) => fetch(`https://heavenlycapture.vercel.app/services?category=${params.category}`)
             },
             {
                 path: '/service/:id',
                 element: <PrivetRoute><ServiceDetails></ServiceDetails></PrivetRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5000/service/${params.id}`)
+                loader: ({ params }) => fetch(`https://heavenlycapture.vercel.app/service/${params.id}`)
             },
             {
                 path: '/chat',

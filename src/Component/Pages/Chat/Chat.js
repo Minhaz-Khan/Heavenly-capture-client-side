@@ -4,7 +4,7 @@ import ScrollToBottom from 'react-scroll-to-bottom';
 import { io } from 'socket.io-client';
 import { AuthContext } from '../../AuthProvider/AuthProvider';
 import Message from './Message';
-const ENDPOINT = 'http://localhost:5000/';
+const ENDPOINT = 'https://heavenlycapture.vercel.app/';
 let socket;
 
 const Chat = () => {
